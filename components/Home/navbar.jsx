@@ -11,13 +11,14 @@ export default function Navbar() {
       <div>
         <img src="/logo.png" alt="JeevanCare" className="h-16 mx-4" />
       </div>
-      <div className="flex gap-10">
+      <div className="flex items-center gap-10">
         {nav_items.map((link, index) => (
           <a href={link.href} key={link.key}
           className={`${path === link.href ? 'font-bold' : ''}`}>
             {link.label}
           </a>
         ))}
+          <a href="/login" className="bg-sky-500 px-8 py-2 rounded-xl font-bold text-white">Login</a>
       </div>
     </nav>
   );
