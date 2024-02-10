@@ -22,15 +22,12 @@ export async function sendSMS(prevState, formData) {
         return {
             response:
                 vonage_response.messages[0].status === "0"
-                    ? `🎉 Message sent successfully.`
-                    : `There was an error sending the SMS. ${
-                        // prettier-ignore
-                        vonage_response.messages[0].error-text
-                    }`,
+                    ? console.log("SMS sent successfully")
+                    : console.log(`Error sending SMS, ${vonage_response.messages[0].error-text}`)
         };
     } catch (e) {
         return {
-            response: `There was an error sending the SMS. The error message: ${e.message}`,
+            response: console.log(`There was an error sending the SMS. The error message: ${e.message}`)
         };
     }
 }

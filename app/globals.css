@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.form {
+  @apply rounded-lg mx-2 w-48 h-10 focus:ring-2 focus:ring-slate-400 justify-end px-3 text-black;
+}
+
+.label{
+  @apply flex justify-between items-center;
+}

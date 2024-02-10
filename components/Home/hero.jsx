@@ -14,7 +14,7 @@ export default function Hero() {
       {/* heading */}
       <div className="w-[550px] flex flex-col gap-5">
         <h1 className="text-5xl font-bold tracking-widest" data-aos="fade-up">
-          Connecting you to nearby meical help in emergencies.
+          Connecting you to nearby medical help in emergencies.
         </h1>
         <p className="text-xl tracking-[2px]">
           Jeevan Cure provides progressive and affordale healthcare, accessible
