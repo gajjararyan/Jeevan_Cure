@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <div className="py-10">
           <button
-            className="bg-blue-500 text-white rounded-full 
+            className="bg-blue-600 text-white rounded-full
           px-6 py-3 text-xl font-semibold"
           >
             Consult today

@@ -1,10 +1,8 @@
 //navbar
 export const nav_items = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/search", key: "search", label: "Find a Doctor" },
-  { href: "/app", key: "app", label: "Apps" },
-  { href: "/test", key: "test", label: "Testimonials" },
-  { href: "/about", key: "about", label: "About Us" }
+  { href: "/about", key: "about", label: "About Us" },
+  { href: "/contact", key: "search", label: "Contact Us" }
 ];
 
 export const services = [
