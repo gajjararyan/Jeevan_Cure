@@ -4,7 +4,7 @@
 
 </div>
 
-<p align="center"> <img src="Images/HTF%20image.jpeg" alt="image" width="600" height="auto" ></p>
+<p align="center"> <img src="Images/HTFImage.jpeg" alt="image" width="600" height="auto" ></p>
 <div align="center">
 
 # Team Name - The Event Listener 👨‍💻
