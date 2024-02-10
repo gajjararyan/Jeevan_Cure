@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <section
-      className="relative overflow-hidden h-80 bg-gradient-to-t px-32 py-20 gap-10
+      className="relative text-white overflow-hidden h-80 bg-gradient-to-t px-32 py-20 gap-10
     flex items-start justify-between from-sky-700 via-sky-500 to-sky-400"
     >
       {/* Jeevan Care */}
