@@ -102,6 +102,7 @@ npm run dev
 ```
 
 ## Contributors
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/gajjararyan"><img src="Images/Aryan.jpg" width="230px;" alt=""/><br /><sub><b>Aryan Gajjar</b></sub></a><br /> <br /><a href="https://www.linkedin.com/in/aryangajjar/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a> <a href="mailto:gajjararyan1509@gmail.com" alt="Contact me"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/mail-fill.svg"></a>  <a href="https://linktr.ee/aryangajjar" alt="My site"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/external-link-line.svg"></a></td>
