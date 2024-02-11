@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import {CalendarHeader} from './CalendarHeader';
-import { Day } from './Day';
-import { NewEvent } from './NewEvent';
-import { DeleteEvent } from './DeleteEvent';
-import { useDate } from '../hooks/useDate';
+import CalendarHeader from './CalendarHeader';
+import Day from './Day';
+import NewEvent from './NewEvent';
+import DeleteEvent from './DeleteEvent';
+import {useDate} from '../hooks/useDate';
 
 export default function Calendar (){
     
