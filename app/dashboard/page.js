@@ -1,9 +1,9 @@
 "use client";
 
 import { Chart as ChartJS, registerables } from "chart.js";
-import YearlyReport from "@/components/Dashboard/YearlyReport";
-import HealthGraphs from "@/components/Dashboard/HealthGraphs";
-import EmergencyContact from "@/components/Dashboard/EmergencyContact";
+import YearlyReport from "@/components/dashboard/YearlyReport";
+import HealthGraphs from "@/components/dashboard/HealthGraphs";
+import EmergencyContact from "@/components/dashboard/EmergencyContact";
 
 ChartJS.register(...registerables);
 

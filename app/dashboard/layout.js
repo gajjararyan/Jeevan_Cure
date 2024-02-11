@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Dashboard/Sidebar";
+import Sidebar from "@/components/dashboard/Sidebar";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 // import "../globals.css";
