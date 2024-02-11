@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaUserEdit } from "react-icons/fa";
 import AddContact from "./Modal";
-import { persons } from "@/constants";
 import EditContact from "./EditContact";
-import SendSMS from "./SendMessage";
+import { sendSMS } from "@/app/lib/send-sms";
+
 
 const STORAGE_KEY = "emergency_contacts";
 export default function EmergencyContact() {
@@ -20,23 +20,29 @@ export default function EmergencyContact() {
   }, []);
 
   const handleAddContact = (newContact) => {
-    const updatedContacts = [...contacts, {...newContact, id: Date.now() }];
+    const updatedContacts = [...contacts, { ...newContact, id: Date.now() }];
     setContacts(updatedContacts);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedContacts));
   };
 
-  const handleEditContact = (contactId, updatedContact) => {
-    const updatedContacts = contacts.map((contact) =>
-      contact.id === contactId ? { ...contact, ...updatedContact } : contact
-    );
-    setContacts(updatedContacts);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedContacts));
-    setIsEditModalOpen(false); // Close the edit contact modal after editing
-  };
+  // const handleEditContact = (contactId, updatedContact) => {
+  //   const updatedContacts = contacts.map((contact) =>
+  //     contact.id === contactId ? { ...contact, ...updatedContact } : contact
+  //   );
+  //   setContacts(updatedContacts);
+  //   localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedContacts));
+  //   setIsEditModalOpen(false); // Close the edit contact modal after editing
+  // };
 
-  const handleEditClick = (contact) => {
-    setContactToEdit(contact);
-    setIsEditModalOpen(true);
+  // const handleEditClick = (contact) => {
+  //   setContactToEdit(contact);
+  //   setIsEditModalOpen(true);
+  // };
+
+  const handleEmergencyClick = () => {
+    const numbers = contacts.map((contact) => String(contact.number));
+    console.log(numbers[0]);
+    sendSMS(numbers);
   };
 
   return (
@@ -77,7 +83,8 @@ export default function EmergencyContact() {
           >
             Add Contact
           </button>
-          <button onClick={() => SendSMS(contacts)}
+          <button
+            onClick={handleEmergencyClick}
             className="bg-red-600 w-80 font-bold text-white drop-shadow-xl
             rounded-lg p-2 px-4"
           >
