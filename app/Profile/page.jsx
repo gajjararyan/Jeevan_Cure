@@ -1,7 +1,7 @@
 "use client";
 
 import ProfileApp from "./ProfileApp";
-import RootLayout from '../Dashboard/layout';
+import RootLayout from '@/app/Dashboard/layout';
 
 export default function Profile() {
   return (
