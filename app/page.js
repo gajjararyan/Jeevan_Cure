@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <div className="px-32 min-h-screen">
         <Hero />
-        <Services />
+        <Services id="services" />
         <Healthcare />
         <Mobile />
         <Testimonial />

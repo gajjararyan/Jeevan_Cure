@@ -13,7 +13,7 @@ export default function Navbar() {
       </div>
       <div className="flex items-center gap-10">
         {nav_items.map((link, index) => (
-          <a href={link.href} key={link.key}
+          <a href={link.href} key={index}
           className={`${path === link.href ? 'font-bold' : ''}`}>
             {link.label}
           </a>
