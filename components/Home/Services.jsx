@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section
-      className="min-h-screen text-black flex flex-col justify-start 
+    <section id="services"
+      className="min-h-screen pt-10 text-black flex flex-col justify-start 
     items-center gap-10"
     >
       <h1 className="text-5xl font-bold">Our Services</h1>

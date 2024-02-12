@@ -4,8 +4,8 @@ import { MdWaterDrop, MdBloodtype } from "react-icons/md";
 //navbar
 export const nav_items = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/#services", key: "about", label: "About Us" },
-  { href: "/Contact", key: "search", label: "Contact Us" },
+  { href: "#services", key: "about", label: "About Us" },
+  { href: "/contact", key: "search", label: "Contact Us" },
 ];
 
 export const services = [
